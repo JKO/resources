@@ -3,8 +3,7 @@
 
 #ssh configuration
 sed -i -e 's/#PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
-update-rc.d ssh defaults
-service ssh start
+systemctl enable ssh.service
 
 #Create folder for custom tools
 
