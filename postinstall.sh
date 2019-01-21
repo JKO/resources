@@ -5,6 +5,3 @@
 sed -i -e 's/#PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
 systemctl enable ssh.service
 
-#Create folder for custom tools
-
-mkdir /root/Herramientas/
